@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>50 Startups Profit Prediction</title>
+</head>
+<body>
+
+    <h1 style="text-align: center;">50 Startups Profit Prediction</h1>
+
+    <form action="/predict" method="post" style="text-align: center;">
+
+        <label><b>R&D Spend:</b></label><br>
+        <input type="text" name="rd"><br><br>
+
+        <label><b>Administration:</b></label><br>
+        <input type="text" name="admin"><br><br>
+
+        <label><b>Marketing Spend:</b></label><br>
+        <input type="text" name="marketing"><br><br>
+
+        <label><b>State:</b></label><br>
+        <select name="state">
+            <option value="0">New York</option>
+            <option value="1">California</option>
+            <option value="2">Florida</option>
+        </select><br><br>
+
+        <button type="submit"><b>Predict</b></button>
+
+    </form>
+
+    <h2 style="text-align: center;">
+        {{ prediction_text }}
+    </h2>
+
+    <div style="text-align: center; margin-top: 40px;">
+        <h2><b>Project By</b></h2>
+        <h2><b>Esha</b></h2>
+        <h2><b>Data Analyst and ML Engineer</b></h2>
+    </div>
+
+</body>
+</html>
